@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A-Place - 로그인</title>
+    <link href="/static/css/login.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>🐠 Ocean Fish Shop</h1>
+        <nav>
+            <a href="/login">로그인</a>
+            <a href="/signup">회원가입</a>
+            <a href="/cart">장바구니</a>
+            <a href="/support">고객센터</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <h2>로그인</h2>
+            <form action="/api/users/login" method="post">
+                <div class="input-group">
+                    <label for="username">사용자 이름</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">로그인</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2024 Ocean Fish Shop. All Rights Reserved.
+    </footer>
+</div>
+</body>
+</html>

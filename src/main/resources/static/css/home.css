@@ -1,29 +1,80 @@
-.container{
-    width: 100%;
-}
-
-.header{
-    width: 100%;
-    height: 50px;
-    background-color: aquamarine;
-}
-.left-menu{
-    width: 20%;
-    height: 400px;
-    background: cornflowerblue;
-    float: left;
-}
-
-.content{
-    width: 80%;
-    height: 400px;
-    background: coral;
-    float: right;
-
-}
-.footer{
-    width: 100%;
-    height: 100px;
-    background-color: gray;
-    clear: both;   /* float 다음에 오는 요소 문제해결*/
-}
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s ease;
+        }
+        .header nav a:hover {
+            color: #e0e0e0;
+        }
+        .main-content {
+            display: flex;
+        }
+        .left-menu {
+            width: 250px;
+            background-color: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+        .left-menu h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+        .left-menu ul {
+            list-style-type: none;
+        }
+        .left-menu ul li {
+            margin-bottom: 10px;
+        }
+        .left-menu ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .left-menu ul li a:hover {
+            color: #f1c40f;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ecf0f1;
+        }
+        .content h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }

@@ -1,4 +1,4 @@
-package com.example.aplace.dto;
+package com.example.aplace.vo;
 
 public class boardVO {
     private String brdno, brdtitle, brdwriter, brdmemo, brddate;
